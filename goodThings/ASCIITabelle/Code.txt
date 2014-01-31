@@ -1,0 +1,12 @@
+7  = nichts
+8  = ein Feld zurück
+9  = ein Tab vor
+10 = Enter
+11 = weiblich
+12 = männlich
+13 = bis Anfang löschen
+26 = bis Ende löschen
+27 = Pfeil links
+28 = Knick oben nach rechts
+32 = ein Feld frei
+255= ein Feld frei

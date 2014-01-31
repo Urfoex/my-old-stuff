@@ -1,0 +1,22 @@
+# Microsoft Developer Studio erstellte Abhängigkeitsdatei, einbezogen von R3gH4ck.mak
+
+.\R3gH4ck.cpp : \
+	".\R3gH4ck.h"\
+	".\R3gH4ckDlg.h"\
+	".\StdAfx.h"\
+	
+
+.\R3gH4ck.rc : \
+	".\res\R3gH4ck.ico"\
+	".\res\R3gH4ck.rc2"\
+	
+
+.\R3gH4ckDlg.cpp : \
+	".\R3gH4ck.h"\
+	".\R3gH4ckDlg.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	

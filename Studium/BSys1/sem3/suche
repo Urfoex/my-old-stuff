@@ -1,0 +1,39 @@
+#! /bin/csh
+
+switch ( $#argv)
+  case 1 :
+    find ~ -name $1
+    exit
+  case 3 :
+    if ( "$2" == "-f") then
+      find ~ -name "$1" >&! "$3"
+      cat "$3" | grep "$1"
+      exit
+    endif
+    if ( "$2" == "-p") then
+      find "$3" -name "$1"
+      exit
+    endif
+    echo 'Benutzung: suche filename1 [-f filename2] [-p pfad]'
+    exit
+    breaksw
+  case 5 :
+    if( "$2" == "-f" && "$4" == "-p" ) then
+      find "$5" -name "$1" >&! "$3"
+      cat "$3" | grep "$1"
+      exit
+    endif
+    if( "$2" == "-p" && "$4" == "-f" ) then
+      find "$3" -name "$1" >&! "$5"
+      cat "$5" | grep "$1"
+      exit
+    endif
+    echo 'Benutzung: suche filename [-f filename2] [-p pfad]'
+    exit
+    breaksw
+  default :
+    echo 'Benutzung: suche filename1 [-f filename2] [-p pfad]'
+    exit
+endsw
+
+exit

@@ -1,0 +1,12 @@
+{ Dies ist eine automatisch erzeugte Lazarus-Ressourcendatei }
+
+LazarusResources.Add('THinweis','FORMDATA',[
+  'TPF0'#8'THinweis'#7'Hinweis'#4'Left'#3'+'#2#6'Height'#2#31#3'Top'#3#238#2#5
+  +'Width'#3#200#0#18'HorzScrollBar.Page'#3#199#0#18'VertScrollBar.Page'#2#30#7
+  +'Caption'#6#7'Hinweis'#12'ClientHeight'#2#31#11'ClientWidth'#3#200#0#0#6'TLa'
+  +'bel'#7'Achtung'#4'Left'#2#8#6'Height'#2#14#3'Top'#2#8#5'Width'#3#137#0#7'Ca'
+  +'ption'#6#26'Sie haben etwas vergessen.'#5'Color'#7#6'clNone'#11'ParentColor'
+  +#8#0#0#7'TButton'#7'Button1'#4'Left'#3#152#0#6'Height'#2#15#3'Top'#2#8#5'Wid'
+  +'th'#2'+'#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#2'Ok'#7'OnClick'#7
+  +#12'Button1Click'#8'TabOrder'#2#0#0#0#0
+]);

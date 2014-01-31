@@ -1,0 +1,222 @@
+object Buchung: TBuchung
+  Left = 295
+  Height = 290
+  Top = 106
+  Width = 499
+  HorzScrollBar.Page = 498
+  VertScrollBar.Page = 289
+  Caption = 'Buchung'
+  ClientHeight = 290
+  ClientWidth = 499
+  object Credits: TLabel
+    Left = 454
+    Height = 14
+    Hint = 'Brainstorming: Katja Müller   // Umsetzung: Manuel Bellersen   // Kontakt: Kakarott2003@yahoo.de'
+    Top = 224
+    Width = 35
+    Caption = 'Credits'
+    Color = clNone
+    ParentColor = False
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object Kontoinhaber: TGroupBox
+    Left = 8
+    Height = 208
+    Top = 8
+    Width = 232
+    Caption = 'Kontoinhaber'
+    ClientHeight = 190
+    ClientWidth = 228
+    TabOrder = 0
+    object Name_: TLabeledEdit
+      Left = 14
+      Height = 25
+      Top = 16
+      Width = 200
+      EditLabel.Left = 14
+      EditLabel.Height = 14
+      EditLabel.Top = -1
+      EditLabel.Width = 34
+      EditLabel.Caption = 'Name_'
+      EditLabel.Color = clNone
+      EditLabel.ParentColor = False
+      ParentColor = False
+      TabOrder = 0
+    end
+    object Vorname_: TLabeledEdit
+      Left = 14
+      Height = 25
+      Top = 64
+      Width = 200
+      EditLabel.Left = 14
+      EditLabel.Height = 14
+      EditLabel.Top = 47
+      EditLabel.Width = 49
+      EditLabel.Caption = 'Vorname_'
+      EditLabel.Color = clNone
+      EditLabel.ParentColor = False
+      ParentColor = False
+      TabOrder = 1
+    end
+    object Kontonummer_: TLabeledEdit
+      Left = 14
+      Height = 25
+      Top = 160
+      Width = 112
+      EditLabel.Left = 14
+      EditLabel.Height = 14
+      EditLabel.Top = 143
+      EditLabel.Width = 73
+      EditLabel.Caption = 'Kontonummer_'
+      EditLabel.Color = clNone
+      EditLabel.ParentColor = False
+      ParentColor = False
+      TabOrder = 2
+    end
+    object _Laden: TButton
+      Left = 139
+      Height = 25
+      Hint = 'Läd das Konto des Kontoinhabers'
+      Top = 160
+      Width = 75
+      BorderSpacing.InnerBorder = 4
+      Caption = '_Laden'
+      OnClick = _LadenClick
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+    end
+    object Passwort: TLabeledEdit
+      Left = 14
+      Height = 25
+      Top = 112
+      Width = 200
+      EditLabel.Left = 14
+      EditLabel.Height = 14
+      EditLabel.Top = 95
+      EditLabel.Width = 45
+      EditLabel.Caption = 'Passwort'
+      EditLabel.Color = clNone
+      EditLabel.ParentColor = False
+      ParentColor = False
+      TabOrder = 4
+    end
+  end
+  object Beguenstigter: TGroupBox
+    Left = 256
+    Height = 208
+    Top = 8
+    Width = 233
+    Caption = 'Beguenstigter'
+    ClientHeight = 190
+    ClientWidth = 229
+    TabOrder = 1
+    object _Name: TLabeledEdit
+      Left = 14
+      Height = 25
+      Top = 16
+      Width = 200
+      EditLabel.Left = 14
+      EditLabel.Height = 14
+      EditLabel.Top = -1
+      EditLabel.Width = 34
+      EditLabel.Caption = '_Name'
+      EditLabel.Color = clNone
+      EditLabel.ParentColor = False
+      Enabled = False
+      ParentColor = False
+      TabOrder = 0
+    end
+    object _Kontonummer: TLabeledEdit
+      Left = 14
+      Height = 25
+      Top = 112
+      Width = 200
+      EditLabel.Left = 14
+      EditLabel.Height = 14
+      EditLabel.Top = 95
+      EditLabel.Width = 73
+      EditLabel.Caption = '_Kontonummer'
+      EditLabel.Color = clNone
+      EditLabel.ParentColor = False
+      Enabled = False
+      ParentColor = False
+      TabOrder = 1
+    end
+    object _Vorname: TLabeledEdit
+      Left = 14
+      Height = 25
+      Top = 64
+      Width = 200
+      EditLabel.Left = 14
+      EditLabel.Height = 14
+      EditLabel.Top = 47
+      EditLabel.Width = 49
+      EditLabel.Caption = '_Vorname'
+      EditLabel.Color = clNone
+      EditLabel.ParentColor = False
+      Enabled = False
+      ParentColor = False
+      TabOrder = 2
+    end
+    object Laden_: TButton
+      Left = 72
+      Height = 25
+      Hint = 'Läd das Konto des Begünstigten'
+      Top = 160
+      Width = 75
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Laden_'
+      Enabled = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+    end
+  end
+  object Geldbetrag: TGroupBox
+    Left = 9
+    Height = 57
+    Top = 224
+    Width = 352
+    Caption = 'Geldbetrag'
+    ClientHeight = 39
+    ClientWidth = 348
+    TabOrder = 2
+    object Ueberweisen: TButton
+      Left = 229
+      Height = 24
+      Hint = 'Überweist den angegebenen Geldbetrag'
+      Top = 8
+      Width = 99
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Ueberweisen'
+      Enabled = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+    end
+    object Betrag: TEdit
+      Left = 13
+      Height = 24
+      Hint = 'Betrag in Cent'
+      Top = 8
+      Width = 200
+      Enabled = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      Text = 'Betrag'
+    end
+  end
+  object Beenden: TButton
+    Left = 414
+    Height = 25
+    Top = 256
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Beenden'
+    OnClick = BeendenClick
+    TabOrder = 3
+  end
+end

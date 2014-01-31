@@ -1,0 +1,409 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>WormHole</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>WormHole</cstring>
+    </property>
+    <property name="enabled">
+        <bool>true</bool>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>480</width>
+            <height>180</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>0</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>1</horstretch>
+            <verstretch>1</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>21</width>
+            <height>21</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>480</width>
+            <height>180</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>WormHole</string>
+    </property>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>Wahlbox</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>460</width>
+                <height>140</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Ringanwahl</string>
+        </property>
+        <widget class="QComboBox">
+            <item>
+                <property name="text">
+                    <string>00</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>76</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox8</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>360</x>
+                    <y>20</y>
+                    <width>40</width>
+                    <height>21</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <item>
+                <property name="text">
+                    <string>00</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>12</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>19</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox1</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>40</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="currentItem">
+                <number>0</number>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <item>
+                <property name="text">
+                    <string>00</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>21</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>70</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>60</x>
+                    <y>20</y>
+                    <width>40</width>
+                    <height>21</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <item>
+                <property name="text">
+                    <string>00</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>68</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox3</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>110</x>
+                    <y>20</y>
+                    <width>40</width>
+                    <height>21</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <item>
+                <property name="text">
+                    <string>00</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox4</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>160</x>
+                    <y>20</y>
+                    <width>40</width>
+                    <height>21</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <item>
+                <property name="text">
+                    <string>00</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox5</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>210</x>
+                    <y>20</y>
+                    <width>40</width>
+                    <height>21</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <item>
+                <property name="text">
+                    <string>00</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>01</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox6</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>260</x>
+                    <y>20</y>
+                    <width>40</width>
+                    <height>21</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <item>
+                <property name="text">
+                    <string>00</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>32</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox7</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>310</x>
+                    <y>20</y>
+                    <width>40</width>
+                    <height>21</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QComboBox">
+            <item>
+                <property name="text">
+                    <string>00</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>80</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBox9</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>410</x>
+                    <y>20</y>
+                    <width>40</width>
+                    <height>20</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>Anwahl_Abbrechen</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>110</y>
+                    <width>130</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Anwahl A&amp;bbrechen</string>
+            </property>
+            <property name="accel">
+                <string>Alt+B</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Bricht die Anwahl ab.</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>Verbindung_schliessen</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>150</x>
+                    <y>110</y>
+                    <width>130</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&amp;Verbindung beenden</string>
+            </property>
+            <property name="accel">
+                <string>Alt+V</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Beendet die aktive Verbindung.</string>
+            </property>
+        </widget>
+        <widget class="QProgressBar">
+            <property name="name">
+                <cstring>progressBar1</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>50</y>
+                    <width>440</width>
+                    <height>22</height>
+                </rect>
+            </property>
+            <property name="progress">
+                <number>0</number>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>Anwaehlen</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>80</y>
+                    <width>90</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>&amp;Anwählen</string>
+            </property>
+            <property name="accel">
+                <string>Alt+A</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Wählt die eingegebene Adresse an.</string>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>Schutzschliessen</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>350</x>
+                    <y>113</y>
+                    <width>100</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Schutzschild</string>
+            </property>
+            <property name="toggleButton">
+                <bool>true</bool>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Aktivieren um das Schutzschild zu aktivieren.</string>
+            </property>
+        </widget>
+        <widget class="QProgressBar">
+            <property name="name">
+                <cstring>progressBar3</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>150</x>
+                    <y>80</y>
+                    <width>300</width>
+                    <height>22</height>
+                </rect>
+            </property>
+            <property name="totalSteps">
+                <number>100</number>
+            </property>
+            <property name="progress">
+                <number>0</number>
+            </property>
+        </widget>
+    </widget>
+</widget>
+<toolbars>
+</toolbars>
+<connections>
+    <connection>
+        <sender>Schutzschliessen</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>WormHole</receiver>
+        <slot>Schutzschild_aktivieren(bool)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">wormhole.ui.h</include>
+</includes>
+<slots>
+    <slot>Schutzschild_aktivieren( bool Schutz )</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

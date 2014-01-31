@@ -1,0 +1,154 @@
+ducks('Tick Duck').
+ducks('Trick Duck').
+ducks('Track Duck').
+ducks('Della Duck').
+ducks('Donald Duck').
+ducks('Gustav Gans').
+ducks('Dussel Duck').
+ducks('Wastel Duck').
+ducks('Franz Gans').
+ducks('Mathilda Duck').
+ducks('Dagobert Duck').
+ducks('Dortel Duck').
+ducks('Degenhard Duck').
+ducks('General Golo Gans').
+ducks('Daphne Duck').
+ducks('Gretchen Gogel').
+ducks('Teddy Duck').
+ducks('Wilhelmine Erpel').
+ducks('Gangolf Gans').
+ducks('Willibald Wasserhuhn').
+ducks('Dankrade Duck').
+ducks('Dietbert Duck').
+ducks('Jakob Duck').
+ducks('Diethelm Duck').
+ducks('Hilmar Duck').
+ducks('Dorette Duck').
+ducks('Emanuel Erpel').
+ducks('Wilberta Wasserhuhn').
+ducks('David Duck').
+ducks('Grubel-Gustel Duck').
+ducks('Minchen Matz').
+ducks('Gunhilda Gans').
+ducks('Emelrich Erpel').
+ducks('David Fuerchtegott Duck').
+
+unter('Tick Duck','Della Duck').
+
+unter('Trick Duck','Della Duck').
+
+unter('Track Duck','Della Duck').
+
+unter('Della Duck','Dortel Duck').
+unter('Della Duck','Degenhard Duck').
+
+unter('Donald Duck','Dortel Duck').
+unter('Donald Duck','Degenhard Duck').
+
+unter('Gustav Gans','General Golo Gans').
+unter('Gustav Gans','Daphne Duck').
+
+unter('Dussel Duck','Gretchen Gogel').
+unter('Dussel Duck','Teddy Duck').
+
+unter('Wastel Duck','Gretchen Gogel').
+unter('Wastel Duck','Teddy Duck').
+
+unter('Franz Gans','Wilhelmine Erpel').
+unter('Franz Gans','Gangolf Gans').
+
+unter('Mathilda Duck','Dangrade Duck').
+unter('Mathilda Duck','Dietbert Duck').
+
+unter('Dagobert Duck','Dankrade Duck').
+unter('Dagobert Duck','Dietbert Duck').
+
+unter('Dortel Duck','Dankrade Duck').
+unter('Dortel Duck','Dietbert Duck').
+
+unter('Degenhard Duck',' Hilmar Duck').
+unter('Degenhard Duck','Dorette Duck').
+
+unter('Daphne Duck','Hilmar Duck').
+unter('Daphne Duck','Dorette Duck').
+
+unter('Teddy Duck','Hilmar Duck').
+unter('Teddy Duck','Dorette Duck').
+
+unter('Wilhelmine Erpel','Emanuel Erpel').
+unter('Wilhelmine Erpel','Wilberta Wasserhuhn').
+
+unter('Willibald Wasserhuhn','Emanuel Erpel').
+unter('Willibald Wasserhuhn','Wilberta Wasserhuhn').
+
+unter('Dietbert Duck','Gruben-Gustel Duck').
+unter('Dietbert Duck','Minchen Matz').
+
+unter('Jakob Duck','Gruben-Gustel Duck').
+unter('Jakob Duck','Minchen Matz').
+
+unter('Diethelm Duck','Gruben-Gustel Duck').
+unter('Diethelm Duck','Michen Matz').
+
+unter('Dorette Duck','Gunhilda Gans').
+unter('Dorette Duck','Emelrich Erpel').
+
+unter('Emanuel Erpel','Gunhilda Gans').
+unter('Emanuel Erpel','Emelrich Erpel').
+
+unter('Gruben-Gustel Duck', 'David Fuerchtegott Duck').
+unter('David Duck', 'David Fuerchtegott Duck').
+
+ueber('Gruben-Gustel Duck','Dietbert Duck').
+ueber('Gruben-Gustel Duck','Jakob Duck').
+ueber('Gruben-Gustel Duck','Diethelm Duck').
+ueber('Minchen Matz','Dietbert Duck').
+ueber('Minchen Matz','Jakob Duck').
+ueber('Minchen Matz','Diethelm Duck').
+
+ueber('Dunhilda Gans','Dorette Duck').
+ueber('Dunhilda Gans','Emanuel Erpel').
+ueber('Emelrich Erpel','Dorette Duck').
+ueber('Emelrich Erpel','Emanuel Erpel').
+
+ueber('Dankrade Duck','Mathilda Duck').
+ueber('Dankrade Duck','Dagobert Duck').
+ueber('Dankrade Duck','Dortel Duck').
+ueber('Dietbert Duck','Mathilda Duck').
+ueber('Dietbert Duck','Dagobert Duck').
+ueber('Dietbert Duck','Dortel Duck').
+
+ueber('Hilmar Duck','Degenhard Duck').
+ueber('Hilmar Duck','Daphne Duck').
+ueber('Hilmar Duck','Teddy Duck').
+ueber('Dorette Duck','Degenhard Duck').
+ueber('Dorette Duck','Daphne Duck').
+ueber('Dorette Duck','Teddy Duck').
+
+ueber('Emanuel Erpel','Wilhelmine Erpel').
+ueber('Emanuel Erpel','Willibald Wasserhuhn').
+ueber('Wilberta Wasserhuhn','Wilhelmine Erpel').
+ueber('Wilberta Wasserhuhn','Willibald Wasserhuhn').
+
+ueber('Dortel Duck','Della Duck').
+ueber('Dortel Duck','Donald Duck').
+ueber('Degenhard Duck','Della Duck').
+ueber('Degenhard Duck','Donald Duck').
+
+ueber('General Golo Gans','Gustav Gans').
+ueber('Daphne Duck','Gustav Gans').
+
+ueber('Gretchen Gogel','Dussel Duck').
+ueber('Gretchen Gogel','Wastel Duck').
+ueber('Teddy Duck','Dussel Duck').
+ueber('Teddy Duck','Wastel Duck').
+
+ueber('Wilhelmine Erpel','Franz Gans').
+ueber('Gangolf Gans','Franz Gans').
+
+ueber('Della Duck','Tick Duck').
+ueber('Della Duck','Trick Duck').
+ueber('Della Duck','Track Duck').
+
+ueber('David Fuerchtegott Duck', 'David Duck'). 
+ueber('David Fuerchtegott Duck', 'Gruben-Gustel Duck'). 

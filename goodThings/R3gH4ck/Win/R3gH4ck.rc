@@ -1,0 +1,396 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\R3gH4ck.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standardkomponenten\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 216, 210
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,21,21,SS_REALSIZEIMAGE
+    LTEXT           "R3gH4ck Version 3.0",IDC_STATIC,45,7,86,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004 Xom-I-moX",IDC_STATIC,45,20,107,8
+    DEFPUSHBUTTON   "OK",IDOK,171,7,38,21,WS_GROUP
+    LTEXT           "Hilfe:",IDC_STATIC,7,59,18,8
+    LTEXT           "1) klicken sie alle gewünschten Optionen an",IDC_STATIC,
+                    30,59,179,8
+    LTEXT           "2) klicken sie ""RegFile schreiben"" an (hierbei wird die reghack.reg angelegt, in welcher sich alle Einstellungen befinden)",
+                    IDC_STATIC,30,72,179,24
+    LTEXT           "3) klicken sie auf ""Übernehmen"" (hiermit werden alle Einstellungen übernommen)",
+                    IDC_STATIC,30,101,179,16
+    LTEXT           "4) klicken sie auf ""OK"" um das Programm zu beenden",
+                    IDC_STATIC,30,122,179,8
+    LTEXT           "5) starten sie Windows neu, damit alle Einstellungen wirksam werden",
+                    IDC_STATIC,30,135,179,15
+    LTEXT           "eM@il: Kakarott2003@yahoo.de",IDC_STATIC,45,33,104,8
+    LTEXT           "ICQ: 169472746",IDC_STATIC,45,46,53,8
+    LTEXT           "TIP: Drücken sie auf START -> BEENDEN. Halten sie nun die SHIFT-Taste gedrückt und starten sie neu (dadurch wird nur Windows neugestartet und nicht der ganze Rechner, was den Bootprozess um ca die Hälfte verkürzt).",
+                    IDC_STATIC,7,155,202,32
+    LTEXT           "Sobald ""Windows wird neu gestartet"" erscheint, können sie die Shift-Taste wieder los lassen.",
+                    IDC_STATIC,7,187,179,16
+END
+
+IDD_R3GH4CK_DIALOG DIALOGEX 0, 0, 282, 335
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "R3gH4ck"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,199,313,75,15
+    PUSHBUTTON      "&Übernehmen",IDNEHMEN,102,313,75,15
+    CONTROL         "kein AUSFÜHREN im Start",IDC_kais,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,101,10
+    CONTROL         "kein BEENDEN im Start",IDC_kbis,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,17,101,11
+    CONTROL         "Bildschirmänderung verbieten",IDC_bav,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,108,145,10
+    CONTROL         "Bilschirmschonerveränderung verbieten",IDC_bsvv,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,78,141,10
+    CONTROL         "Hintergrundveränderung verbieten",IDC_hvv,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,88,136,10
+    CONTROL         "kein SUCHEN im Start",IDC_ksis,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,28,101,10
+    CONTROL         "keine Systemsteuerung",IDC_kss,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,238,101,10
+    CONTROL         "kein einwählen ins Internet",IDC_keii,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,147,101,10
+    CONTROL         "kein DOKUMENTE im Start",IDC_kdis,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,38,101,10
+    CONTROL         "Menü des Startmenüs abschalten",IDC_mdsa,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,68,121,10
+    CONTROL         "Identifikartions Modul ausblenden",IDC_ima,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,178,121,10
+    CONTROL         "Zugriffssteuerung des Netzwerks fehlt",IDC_zdnf,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,168,135,10
+    CONTROL         "keine DOS-Anwendung ausführen",IDC_kdaa,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,207,123,10
+    CONTROL         "kein Single DOS-Modus",IDC_ksdm,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,217,101,10
+    CONTROL         "kein Drucker löschen",IDC_kdl,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,177,101,10
+    CONTROL         "Modul Kennwörter ausblenden",IDC_mka,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,247,123,10
+    CONTROL         "Netzwerk-Modul ausblenden",IDC_nma,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,218,130,10
+    CONTROL         "Hardware Modul ausblenden",IDC_hma,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,248,113,10
+    CONTROL         "Dateisystem aus System entfernen",IDC_dsase,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,268,130,10
+    CONTROL         "virtueller Arbeisspeicher unverstellbar",IDC_vau,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,278,136,10
+    CONTROL         "kein Task Manager",IDC_ktm,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,157,123,10
+    CONTROL         "kein Dateimenü",IDC_kdm,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,57,65,10
+    CONTROL         "kein Gerätemanager",IDC_kgm,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,228,80,10
+    CONTROL         "keine Ordner im Start und Explorer",IDC_koisue,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,87,123,10
+    CONTROL         "Kein Context Menü",IDC_kcm,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,97,76,10
+    CONTROL         "Explorer ohne Ordneroptionen",IDC_eoo,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,17,110,10
+    PUSHBUTTON      "&RegFile schreiben",IDC_rfs,7,313,75,15
+    CONTROL         "keine Registrieänderung",IDC_krae,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,197,93,10
+    CONTROL         "keine Taskleisteneinstellung",IDC_ktle,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,167,105,10
+    CONTROL         "DOKUMENTE beim Beenden löschen",IDC_dlbsl,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,58,136,10
+    CONTROL         "kein SYSTEMSTEUERUNG in Start",IDC_kssis,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,48,130,10
+    CONTROL         "kein Darstellung",IDC_kds,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,98,67,10
+    CONTROL         "kein Einstellung",IDC_kes,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,287,65,10
+    CONTROL         "kein Kennwörter ändern",IDC_kkae,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,257,91,10
+    CONTROL         "kein Benutzerprofile",IDC_kbp,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,267,78,10
+    CONTROL         "kein Benutzer",IDC_kb,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,277,59,10
+    CONTROL         "keine Geräte",IDC_kg,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,258,57,10
+    CONTROL         "keine Zugriffssteuerung",IDC_kzs,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,208,90,10
+    CONTROL         "kein Dateifreigabe",IDC_kdf,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,188,73,10
+    CONTROL         "kein Druckerfreigabe",IDC_kdrf,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,198,82,10
+    CONTROL         "Laufwerke nicht anzeigen",IDC_lna,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,148,97,10
+    CONTROL         "keine Netzwerklaufwerke auf Desktop",IDC_knwlw,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,158,137,10
+    CONTROL         "kein Internet auf Desktop",IDC_kiad,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,128,96,10
+    CONTROL         "Desktop ändern verboten",IDC_daev,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,118,97,10
+    CONTROL         "keine Icons auf Desktop",IDC_kisad,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,138,93,10
+    CONTROL         "Explorer nicht schließbar",IDC_ensb,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,7,93,10
+    CONTROL         "kein Rechtsklick im Explorer",IDC_krkie,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,117,105,10
+    EDITTEXT        IDC_exptit,7,298,199,12
+    LTEXT           "Explorer Titel",IDC_STATIC,7,290,63,8,SS_CENTERIMAGE
+    CONTROL         "kein Tool/Optionen im Explorer",IDC_ktoie,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,27,113,10
+    CONTROL         "kein Speichern unter im Explorer",IDC_ksuie,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,37,117,10
+    CONTROL         "keine Favorieten",IDC_kfvo,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,77,69,10
+    CONTROL         "kein Datei-Neu",IDC_kdneu,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,47,63,10
+    CONTROL         "kein Datei-Öffnen",IDC_kdopen,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,67,71,10
+    CONTROL         "kein Finden",IDC_kfind,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,107,53,10
+    CONTROL         "kein Download Ziel auswählen",IDC_kdzaw,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,127,113,10
+    CONTROL         "kein Fullscreen im Explorer",IDC_kfsie,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,137,99,10
+    CONTROL         "kein Drucker hinzufügen",IDC_kdhf,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,187,93,10
+    CONTROL         "kein CD Autorun",IDC_kcdar,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,227,68,10
+    CONTROL         "BEEP bei Fehlern",IDC_bbf,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,237,71,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,0
+ PRODUCTVERSION 3,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "Comments", "Anwendung für Windows\0"
+            VALUE "CompanyName", "Xom-I-moX\0"
+            VALUE "FileDescription", "Anwendung der Cooperation Xom-I-moX\0"
+            VALUE "FileVersion", "3, 0, 0, 0\0"
+            VALUE "InternalName", "R3gH4ck\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004\0"
+            VALUE "LegalTrademarks", "Freeware\0"
+            VALUE "OriginalFilename", "R3gH4ck.EXE\0"
+            VALUE "PrivateBuild", "Anwendung der Cooperation Xom-I-moX (Programmierer : Manuel Bellersen (Kakarott2003@yahoo.de))\0"
+            VALUE "ProductName", "R3gH4ck\0"
+            VALUE "ProductVersion", "3.0\0"
+            VALUE "SpecialBuild", "R3gH4ck\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        VERTGUIDE, 30
+        VERTGUIDE, 45
+        VERTGUIDE, 58
+        VERTGUIDE, 63
+        VERTGUIDE, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+        HORZGUIDE, 15
+        HORZGUIDE, 20
+        HORZGUIDE, 28
+        HORZGUIDE, 33
+        HORZGUIDE, 41
+        HORZGUIDE, 46
+        HORZGUIDE, 54
+        HORZGUIDE, 59
+        HORZGUIDE, 67
+        HORZGUIDE, 72
+        HORZGUIDE, 96
+        HORZGUIDE, 101
+        HORZGUIDE, 117
+        HORZGUIDE, 122
+        HORZGUIDE, 130
+        HORZGUIDE, 135
+        HORZGUIDE, 150
+        HORZGUIDE, 155
+        HORZGUIDE, 187
+        HORZGUIDE, 203
+    END
+
+    IDD_R3GH4CK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        VERTGUIDE, 7
+        VERTGUIDE, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 328
+        HORZGUIDE, 17
+        HORZGUIDE, 28
+        HORZGUIDE, 38
+        HORZGUIDE, 48
+        HORZGUIDE, 58
+        HORZGUIDE, 68
+        HORZGUIDE, 78
+        HORZGUIDE, 88
+        HORZGUIDE, 98
+        HORZGUIDE, 108
+        HORZGUIDE, 118
+        HORZGUIDE, 128
+        HORZGUIDE, 138
+        HORZGUIDE, 148
+        HORZGUIDE, 158
+        HORZGUIDE, 168
+        HORZGUIDE, 178
+        HORZGUIDE, 188
+        HORZGUIDE, 198
+        HORZGUIDE, 208
+        HORZGUIDE, 218
+        HORZGUIDE, 228
+        HORZGUIDE, 238
+        HORZGUIDE, 248
+        HORZGUIDE, 258
+        HORZGUIDE, 268
+        HORZGUIDE, 278
+        HORZGUIDE, 288
+        HORZGUIDE, 298
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "R3gH4ck.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Inf&o über R3gH4ck..."
+END
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\R3gH4ck.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
+#include "l.deu\afxres.rc"          // Standardkomponenten
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

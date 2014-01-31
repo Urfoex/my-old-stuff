@@ -1,0 +1,30 @@
+object Hinweis: THinweis
+  Left = 555
+  Height = 31
+  Top = 750
+  Width = 200
+  HorzScrollBar.Page = 199
+  VertScrollBar.Page = 30
+  Caption = 'Hinweis'
+  ClientHeight = 31
+  ClientWidth = 200
+  object Achtung: TLabel
+    Left = 8
+    Height = 14
+    Top = 8
+    Width = 137
+    Caption = 'Sie haben etwas vergessen.'
+    Color = clNone
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 152
+    Height = 15
+    Top = 8
+    Width = 43
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Ok'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+end

@@ -1,0 +1,26 @@
+l :- ['~/prolog_uebung/teil1.plog'].
+member( X, [ X | R]).
+member( X, [ Y | R]) :- member( X, R).
+sum([],0).
+sum([X|R],S):-sum(R,S1),S is S1+X.          
+mul([],1).
+mul([X|R],S):-mul(R,S1),S is S1*X.          
+fak( 1, 1).
+fak( 0, 1).
+fak( X , F) :- Y is X-1, fak( Y, F1 ), F is F1*X.
+subset([X|L1],L2):-member(X,L2),subset(L1,L2).
+subset([],_).
+last( [X], X).
+last( [X | R], L) :- last( R, L).
+app( [], L, L).
+app( [X | L1], L2, [X | L3]) :- app( L1, L2, L3).
+delete( X, [], []).                                
+delete( X, [X | R], R).
+delete( X, [Y | R], [Y | R1] ) :- delete( X, R, R1).
+delall( X, [], []).                                
+delall( X, [X | R], R1) :- delall( X, R, R1).
+delall( X, [Y | R], [Y | R1] ) :- delall( X, R, R1).
+slowsort( L, Sort) :- tausch( L, L1), slowsort( L1, Sort).
+slowsort( L, L).
+tausch( [X | L], [X | R]) :- tausch( L, R).
+tausch( [E1, E2 | L] , [E2, E1 | L]) :- E1 > E2.

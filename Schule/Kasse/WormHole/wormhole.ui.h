@@ -1,0 +1,50 @@
+/****************************************************************************
+** ui.h extension file, included from the uic-generated form implementation.
+**
+** If you want to add, delete, or rename functions or slots, use
+** Qt Designer to update this file, preserving your code.
+**
+** You should not define a constructor or destructor in this file.
+** Instead, write your code in functions called init() and destroy().
+** These will automatically be called by the form's constructor and
+** destructor.
+*****************************************************************************/
+#include <qdatetime.h>
+
+
+void WormHole::Schutzschild_aktivieren( bool Schutz )
+{
+    int n=0;
+    QTime t,te;
+    if(Schutz==TRUE)
+    {
+	for(n=0;n<1001;n++)
+	{
+	    progressBar3->setProgress((n/10));
+	   t = QTime::currentTime();
+	    textLabel1->setText(t,te);
+	   for(int a=0;a<1;)
+	   {
+	       te=QTime::currentTime();
+	       if((te.second())==(t.second()+1))
+		   a++;
+	   }
+	}
+    }
+    else
+    {
+	for(n=1000;n>(-1);n--)
+	{
+	    progressBar3->setProgress((n/100));
+	   t = QTime::currentTime();
+	   
+	   for(int a=0;a<1;)
+	   {
+	       te=QTime::currentTime();
+	       textLabel1->setText(t,te);
+	       if((te.second())==(t.second()+1))
+		   a++;
+	   }
+	}
+    }
+}

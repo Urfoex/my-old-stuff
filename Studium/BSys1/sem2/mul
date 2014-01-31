@@ -1,0 +1,81 @@
+#! /bin/csh 
+
+if ( $#argv > 0) then
+  set mul = 1
+  set tmp = 1
+  set test = 1
+  foreach var ( $argv)
+    set ziffer = "`echo '$var' | grep \[^0-9\] `"
+    if ( "$ziffer" != "" ) then
+      echo "Fehler in der Eingabe"
+      exit
+    endif
+    @ mul = $tmp * $var
+    if ( $var != 0 ) then
+      @ test = $mul / $var
+   
+      if ( $test == $tmp) then
+        set tmp = $mul
+      else
+        echo "Zahlen zu gross"
+        echo "Ergebnis bis $var : $tmp"
+        exit
+      endif
+    else
+      break
+    endif
+  end
+
+  echo "Ergebnis: $mul"
+else
+  set input
+  set test = 1
+  set tmp = 1
+  set erg = 1
+  set olderg = 1
+  while( "$input" != "q")
+    set input = "$<"
+    switch( "$input")
+      case  "[\?]" :
+        echo "Ergebnis $erg"
+        breaksw
+      case "=" :
+        echo "Ergebnis $erg"
+        exit
+      case "x" :
+    @ erg = $olderg
+        breaksw
+      case "n" :
+        set erg = 1
+        set olderg = 1
+        breaksw
+      case "q" :
+        exit
+      case " " :
+        breaksw
+      default :
+       set ziffer = "`echo '$input' | grep \[^0-9\] `"
+       if ( $ziffer == "" && $input != " " && $input != "") then
+         if ( $input != 0 ) then
+           set test = $erg
+           @ erg = $test * $input
+           @ tmp = $erg / $input
+           if ( $test == $tmp ) then
+             set olderg = $test
+             @ erg = $olderg * $input
+           else
+             echo "Zahlen zu gross"
+             set erg = $test
+           endif
+         else
+           set olderg = $erg
+           set erg = 0
+         endif
+       endif
+       breaksw
+    endsw
+  end
+
+endif
+
+exit

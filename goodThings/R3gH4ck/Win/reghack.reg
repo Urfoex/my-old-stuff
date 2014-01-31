@@ -1,0 +1,89 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\R3gH4ck]
+"Version"="3.0"
+"Hersteller"="Manuel Bellersen"
+"Datum"="2004"
+"eMail"="Kakarott2003@yahoo.de"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRun"= dword:00000000
+"NoClose"= dword:00000000
+"NoFind"= dword:00000000
+"NoRecentDocsMenu"= dword:00000000
+"NoChangeStartMenu"= dword:00000000
+"NoDeletePrinter"= dword:00000000
+"NoFolderOptions"= dword:00000000
+"DisableRegistryTools"= dword:00000001
+[HKEY_USERS\.DEFAULT\Software\Microsoft\WindowsNT\CurrentVersion\Policies\System]
+"DisableRegistryTools"= dword:00000001
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"DisableRegistryTools"= dword:00000001
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisableRegistryTools"= dword:00000001
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"DisableRegistryTools"= dword:00000001
+"NoSetTaskbar"= dword:00000000
+"ClearRecentDocsOnExit"= dword:00000000
+"NoSetFolders"= dword:00000000
+"NoDrives"= dword:00000000
+"NoNetHood"= dword:00000000
+"Nolnternetlcon"= dword:00000000
+"NoSaveSettings"= dword:00000000
+"NoDesktop"= dword:00000000
+"NoAddPrinter"= dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main]
+"Window Title"=""
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Internet Explorer\Restrictions]
+"NoRecentDocsMenu"= dword:00000000
+"NoBrowserContextMenu"= dword:00000000
+"NoBrowserOptions"= dword:00000000
+"NoBrowserSaveAs"= dword:00000000
+"NoFavorites"= dword:00000000
+"NoFileNew"= dword:00000000
+"NoFileOpen"= dword:00000000
+"NoFindFiles"= dword:00000000
+"NoSelectDownloadDir"= dword:00000000
+"NoTheaterMode"= dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CDRom]
+"Autorun"= dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main]
+"Beep"="no"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System]
+"NoDispSettingsPageChr"= dword:00000000
+"NoDispScrSavPage"= dword:00000000
+"NoDispBackgroundPage"= dword:00000000
+"NoDispCPL"= dword:00000000
+"NoSecCPL"= dword:00000000
+"NoDevMgrPage"= dword:00000000
+"NoConfigPage"= dword:00000000
+"NoFileSysPage"= dword:00000000
+"NoVirtMemPage"= dword:00000000
+"DisableTaskManager"= dword:00000000
+"NoFileMenu"= dword:00000000
+"NoSetFolders"= dword:00000000
+"NoViewContextMenu"= dword:00000000
+"NoDispAppearancePage"= dword:00000000
+"NoDispSettingsPage"= dword:00000000
+"NoPwdPage"= dword:00000000
+"NoAdminPaqe"= dword:00000000
+"NoProfilePage"= dword:00000000
+"NoDevMgrPage"= dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Network]
+"NoDialIn"= dword:00000000
+"NoNetSetup"= dword:00000000
+"NoNetSetupIDPage"= dword:00000000
+"NoNetSetupSecurityPage"= dword:00000000
+"NoFileSharingControl"= dword:00000000
+"NoPrintSharing"= dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\WinOldApp]
+"Disabled"= dword:00000000
+"NoRealMode"= dword:00000000
+"NoNetSetupSecurityPage"= dword:00000000

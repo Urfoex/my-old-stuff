@@ -1,0 +1,4 @@
+l0 :- ['~/prolog_uebung/load.plog']. 
+l1 :- ['~/prolog_uebung/teil1.plog']. 
+l2 :- ['~/prolog_uebung/baum.plog']. 
+l3 :- ['~/prolog_uebung/gradsuche.plog']. 

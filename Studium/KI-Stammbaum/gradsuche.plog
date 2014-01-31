@@ -1,0 +1,128 @@
+/****************************************************************************/
+grad( X, Y) :-  isMember(Y, [X]), 
+                write('Grad 0'), 
+                !.
+grad( X, Y) :-  \+ isMember( Y, [X]), 
+                ownset( TEMP, unter(X, TEMP), AllUnterX),
+                ownset( TEMP2, ueber(X, TEMP2), AllUeberX),
+                concat( AllUnterX, AllUeberX, AllX),
+                write( ' Naechsten: '),
+                write( AllX), nl,
+                grad( X, Y, AllX, [X], 1), 
+                !.
+
+grad( X, Y, VNG, Abge, Grad) :- write('(pruefe in)'),nl,
+                                isMember( Y, VNG), 
+                                write('Grad von '),
+                                write( X),
+                                write( ' und '),
+                                write( Y),
+                                write( ' ist '),
+                                write(Grad), 
+                                !.
+grad( X, Y, VNG, Abge, Grad) :- \+ isMember( Y, VNG),
+                                write('(nicht in)'), nl,
+                                concat( VNG, Abge, Abge1),
+
+                                write( ' Abgearbeitete: '), write( Abge1), nl,
+
+                                unterset( VNG, [], AllUnterVNG),
+                                ueberset( VNG, [], AllUeberVNG),
+
+                                concat( AllUnterVNG, AllUeberVNG, AllVNG),
+                                single( AllVNG, AllSingle),
+                                remAbge( AllSingle, Abge1, VNGNeu),
+
+                                write( ' Naechsten: '), write( VNGNeu), nl,
+                                GradNew is Grad + 1, 
+                                write( ' aktueller Grad '), write( GradNew), nl,
+                                grad( X, Y, VNGNeu, Abge1, GradNew), 
+                                !.
+
+
+/****************************************************************************/
+/*remAbge( inrem, inabge, out)*/
+remAbge( [], [], [])                :- !.
+remAbge( [], L, [])                 :- !.
+remAbge( [X | L1], [], [X | L1])    :- !.
+remAbge( X, [], [X])                :- !.
+remAbge( [X | L1], L2, L3)          :- isMember(X, L2), remAbge( L1, L2, L3), !.
+remAbge( [X | L1], L2, [X | L3])    :- \+ isMember(X, L2), remAbge( L1, L2, L3), !.
+
+/****************************************************************************/
+/*single( in, out)*/
+single( [], []) :- !.
+single( [X | L1], L2 ) :- single( L1, L2), isMember( X, L2), !.
+single( [X | L1], [X | L2]) :- single( L1, L2), \+ isMember( X, L2), !.
+single( X, [X]) :- !.
+
+/****************************************************************************/
+/*unterset( input, in_list, output)*/
+unterset( [], [], [])           :- !.
+unterset( [], [X | L], [X | L]) :- !.
+unterset( [X | L], [], Aout)    :- ownset( T, unter( X, T), Atemp), 
+                                   unterset( L, Atemp, Aout),
+                                   !.
+unterset( [X | L], [Y | L1], A) :- ownset( T, unter( X, T), L2),
+                                   concat( [Y | L1], L2, L3),
+                                   unterset( L, L3, A),
+                                   !.
+unterset( [X | L], E1, A)       :- ownset( T, unter( X, T), L2),
+                                   concat( E1, L2, L3),         
+                                   unterset( L, L3, A),         
+                                   !.                           
+unterset( X, [], [])    :- ownset( T, unter( X, T), []), !.
+unterset( X, [], A)     :- ownset( T, unter( X, T), A),  !.
+unterset( X, [Y | L], A)        :- ownset( T, unter( X, T), L2), 
+                                   concat( [Y | L], L2, A),
+                                   !.
+unterset( X, Y, [Y])    :- ownset( T, unter( X, T), []), !.
+unterset( X, Y, A)      :- ownset( T, unter( X, T), L),
+                           concat( [Y], L, A),
+                           !.
+
+/****************************************************************************/
+/*ueberset( input, in_list, output)*/
+ueberset( [], [], [])           :- !.
+ueberset( [], [X | L], [X | L]) :- !.
+ueberset( [X | L], [], Aout)    :- ownset( T, ueber( X, T), Atemp), 
+                                   ueberset( L, Atemp, Aout),
+                                   !.
+ueberset( [X | L], [Y | L1], A) :- ownset( T, ueber( X, T), L2),
+                                   concat( [Y | L1], L2, L3),
+                                   ueberset( L, L3, A),
+                                   !.
+ueberset( [X | L], E1, A)       :- ownset( T, ueber( X, T), L2),
+                                   concat( E1, L2, L3),         
+                                   ueberset( L, L3, A),         
+                                   !.                           
+ueberset( X, [], [])    :- ownset( T, ueber( X, T), []), !.
+ueberset( X, [], A)     :- ownset( T, ueber( X, T), A),  !.
+ueberset( X, [Y | L], A)        :- ownset( T, ueber( X, T), L2), 
+                                   concat( [Y | L], L2, A),
+                                   !.
+ueberset( X, Y, [Y])    :- ownset( T, ueber( X, T), []), !.
+ueberset( X, Y, A)      :- ownset( T, ueber( X, T), L),
+                           concat( [Y], L, A),
+                           !.
+
+/****************************************************************************/
+/*ownset( input, funktion, output)*/
+ownset(In, F, Out) :- setof( In, F, Out), !.
+ownset(In, F, []) :- \+ setof( In, F, Out), !.
+
+/****************************************************************************/
+/*concat( quelle, quelle, ziel)*/                          
+concat( [], [], [])             :- !.
+concat( [], [X | L], [X | L])   :- !.
+concat( [], X, [X])             :- !.
+concat( [X | L], [], [X | L])   :- !.
+concat( X, [], [X])             :- !.
+concat( [X | L1], L2, [X | L3]) :- concat( L1, L2, L3), !.
+concat( X, [Y | L1], [X | L2])  :- concat( Y, L1, L2),  !.
+
+/****************************************************************************/
+/*isMember( ele, list)*/                                   
+isMember( X, [ X | R]) :- !.
+isMember( X, [ Y | R]) :- isMember( X, R), !.
+isMember( X, X) :- !.

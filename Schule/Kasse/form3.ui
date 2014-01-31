@@ -1,0 +1,499 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Form3</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Form3</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>472</width>
+            <height>222</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Überweisung</string>
+    </property>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>pixmapLabel1</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>-20</y>
+                <width>470</width>
+                <height>276</height>
+            </rect>
+        </property>
+        <property name="backgroundMode">
+            <enum>PaletteBackground</enum>
+        </property>
+        <property name="backgroundOrigin">
+            <enum>WindowOrigin</enum>
+        </property>
+        <property name="frameShadow">
+            <enum>Plain</enum>
+        </property>
+        <property name="pixmap">
+            <pixmap>geld.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+            <bool>true</bool>
+        </property>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBox2</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>220</width>
+                <height>140</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Kontoinhaber</string>
+        </property>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>lineEdit2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>50</y>
+                    <width>200</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Vorname</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>lineEdit1</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>200</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Name</string>
+            </property>
+        </widget>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabel1_3</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>80</y>
+                    <width>59</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Passwort</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>lineEdit3</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>70</x>
+                    <y>80</y>
+                    <width>140</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Passwort</string>
+            </property>
+            <property name="echoMode">
+                <enum>Password</enum>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>lineEdit4</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>110</y>
+                    <width>120</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Kontonummer</string>
+            </property>
+            <property name="maxLength">
+                <number>11</number>
+            </property>
+            <property name="dragEnabled">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>pushButton1</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>140</x>
+                    <y>110</y>
+                    <width>70</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Laden</string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QLineEdit">
+        <property name="name">
+            <cstring>lineEdit11</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>250</x>
+                <y>20</y>
+                <width>19</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="mouseTracking">
+            <bool>false</bool>
+        </property>
+        <property name="acceptDrops">
+            <bool>false</bool>
+        </property>
+        <property name="readOnly">
+            <bool>true</bool>
+        </property>
+    </widget>
+    <widget class="QLineEdit">
+        <property name="name">
+            <cstring>lineEdit12</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>280</x>
+                <y>20</y>
+                <width>20</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="mouseTracking">
+            <bool>false</bool>
+        </property>
+        <property name="acceptDrops">
+            <bool>false</bool>
+        </property>
+        <property name="echoMode">
+            <enum>Password</enum>
+        </property>
+        <property name="readOnly">
+            <bool>true</bool>
+        </property>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>Beguenstigter</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>240</x>
+                <y>10</y>
+                <width>220</width>
+                <height>110</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Begünstigter</string>
+        </property>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>pushButton2</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>140</x>
+                    <y>80</y>
+                    <width>70</width>
+                    <height>20</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Laden</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>lineEdit7</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>80</y>
+                    <width>120</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Kontonummer</string>
+            </property>
+            <property name="maxLength">
+                <number>11</number>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>lineEdit5</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>200</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Name</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>lineEdit6</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>50</y>
+                    <width>200</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Vorname</string>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBox4</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>160</y>
+                <width>140</width>
+                <height>50</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Guthaben (Cent)</string>
+        </property>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>lineEdit10</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>120</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="frameShape">
+                <enum>LineEditPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="cursorPosition">
+                <number>0</number>
+            </property>
+            <property name="alignment">
+                <set>AlignAuto</set>
+            </property>
+            <property name="readOnly">
+                <bool>true</bool>
+            </property>
+        </widget>
+    </widget>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>pushButton4</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>160</x>
+                <y>190</y>
+                <width>70</width>
+                <height>23</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Beenden</string>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>160</x>
+                <y>160</y>
+                <width>42</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>Credits</string>
+        </property>
+        <property name="toolTip" stdset="0">
+            <string>Brainstorming: Katja Müller
+Programmierung: Manuel Bellersen
+Kontakt: Kakarott2003@yahoo.de</string>
+        </property>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>groupBox3</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>240</x>
+                <y>130</y>
+                <width>220</width>
+                <height>80</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Betrag (Cent)</string>
+        </property>
+        <widget class="QPushButton">
+            <property name="name">
+                <cstring>pushButton3</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>70</x>
+                    <y>50</y>
+                    <width>90</width>
+                    <height>23</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string>Überweisen</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit">
+            <property name="name">
+                <cstring>lineEdit8</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>200</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+        </widget>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButton4</sender>
+        <signal>clicked()</signal>
+        <receiver>Form3</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton1</sender>
+        <signal>clicked()</signal>
+        <receiver>Form3</receiver>
+        <slot>pushButton1_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton2</sender>
+        <signal>clicked()</signal>
+        <receiver>Form3</receiver>
+        <slot>pushButton2_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton3</sender>
+        <signal>clicked()</signal>
+        <receiver>Form3</receiver>
+        <slot>pushButton3_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>lineEdit8</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>Form3</receiver>
+        <slot>lineEdit8_textChanged(const QString&amp;)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">form3.ui.h</include>
+</includes>
+<variables>
+    <variable access="private">int iBeguguthaben;</variable>
+    <variable access="private">long int iGuthaben;</variable>
+    <variable access="private">long int iBetrag;</variable>
+</variables>
+<slots>
+    <slot>pushButton1_clicked()</slot>
+    <slot>pushButton2_clicked()</slot>
+    <slot>pushButton3_clicked()</slot>
+    <slot>lineEdit8_textChanged( const QString &amp; )</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

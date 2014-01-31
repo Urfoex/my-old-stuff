@@ -1,0 +1,9 @@
+// Überlegungen:
+//	file.sgf -> sgf-ls -> hgo(tree) -> [pp]
+//	sgf-ls file.sgf > hgo
+//	sgf-ls: ++ E-O-T (end-of-tree)
+
+//	[aa][bb][cc]...[ss][z] -> [pp]
+//	=> t u v w x y z
+//		(aabbccddeeffgghhiijjkkxxmmxxooxxqqrrsszz ->  pp)
+//		(1 1 2 2 3 3 4 4 5 5 6 6 7 7 8 8 9 9 10 10 11 11 p 13 13 p 15 15 p 17 17 18 18 19 19 q -> 16 16)
